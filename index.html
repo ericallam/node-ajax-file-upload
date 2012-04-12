@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="/zepto.js"></script>
+    <script>
+      $(function(){
+        $('#upload_form').submit(function(e) {
+          e.preventDefault();
+
+          var xhr = new XMLHttpRequest();
+
+          var file = e.target.upload.files[0];
+
+          xhr.open("POST", "/upload", true);
+          xhr.setRequestHeader("Content-Type", "application/octet-stream");
+          xhr.setRequestHeader("X-File-Name", file.fileName);
+          xhr.send(file);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Uploadr</h1>
+    <form action="/upload" enctype="multipart/form-data" method="post" id=upload_form>
+      <input type="file" name="upload">
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</html>
+
+

@@ -1,0 +1,35 @@
+{
+  "name": "ajax-file-upload",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/rubymaverick/node-ajax-file-upload",
+  "author": {
+    "name": "Eric Allam",
+    "email": "rubymaverick@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rubymaverick/node-ajax-file-upload"
+  },
+  "bugs": {
+    "url": "https://github.com/rubymaverick/node-ajax-file-upload/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/rubymaverick/node-ajax-file-upload/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/upload",
+  "engines": {
+    "node": "~0.6.14"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.3.8"
+  },
+  "keywords": []
+}
